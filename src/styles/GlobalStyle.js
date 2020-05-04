@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +13,15 @@ export default createGlobalStyle`
 }
 html, body, #root {
   height: 100%;
-  background-image: linear-gradient(to bottom, #7289da 10%, #273d8e);
+  background: #fff;
+
 }
 body{
   -webkit-font-smoothing: antialiased !important;
+
 }
 body, input, button {
-  font: 14px 'Roboto', sans-serif;
+  font: 14px 'PT Sans', sans-serif;
 }
 a {
   text-decoration: none;
