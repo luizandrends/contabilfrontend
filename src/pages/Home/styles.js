@@ -119,5 +119,34 @@ export const CardContainer = styled.div`
 `;
 
 export const Services = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-top: 250px;
+
+  > span {
+    align-self: center;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+  }
+`;
+
+export const LocationContainer = styled.div`
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  span {
+    align-self: center;
+    font-weight: 300;
+    font-size: 38px;
+    color: #fff;
+  }
+
+  div {
+    justify-content: center;
+    align-self: center;
+  }
 `;

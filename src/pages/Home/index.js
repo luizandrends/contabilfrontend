@@ -1,7 +1,13 @@
 import React from 'react';
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 
-import { Container, HeaderWrapper, CardContainer, Services } from './styles';
+import {
+  Container,
+  HeaderWrapper,
+  CardContainer,
+  Services,
+  LocationContainer,
+} from './styles';
 
 import Carousel from '../../components/Carousel';
 
@@ -48,6 +54,9 @@ export default function Home() {
       <Services>
         <Carousel />
       </Services>
+      <LocationContainer>
+        <span>Nossa Localizaçāo</span>
+      </LocationContainer>
     </Container>
   );
 }
