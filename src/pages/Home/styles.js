@@ -46,22 +46,25 @@ export const HeaderWrapper = styled.div`
         display: flex;
         flex-direction: row;
         margin-right: 12px;
-        border-right: 1px solid #273d8e;
+        border-right: 1px solid #fff;
       }
 
       li {
         margin-right: 18px;
-        color: #273d8e;
-        font-weight: bold;
+        color: #fff;
         font-size: 15px;
+
+        &:hover {
+          color: #ddd;
+        }
       }
 
       button {
         padding: 15px 30px;
         border-radius: 6px;
-        background: #273d8e;
+        background: #fff;
 
-        color: #fff;
+        color: #7289da;
         font-size: 12px;
         font-weight: bold;
         border: none;
@@ -76,37 +79,41 @@ export const CardContainer = styled.div`
   div {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    h3 {
+    span {
       align-self: flex-start;
-      font-size: 50px;
-      max-width: 620px;
+      font-size: 42px;
+      max-width: 400px;
       line-height: 62px;
-      color: #273d8e;
+      color: #fff;
       text-align: left;
+      font-weight: 300;
     }
-
     .animated-banner {
+      margin: 0 auto;
+      max-width: 480px;
+
       animation-name: floating;
       animation-duration: 2.2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
 
       img {
-        width: 90%;
-        height: 90%;
+        align-self: flex-end;
+        width: 500px;
       }
-    }
 
-    @keyframes floating {
-      from {
-        transform: translate(0, 0px);
-      }
-      65% {
-        transform: translate(0, 25px);
-      }
-      to {
-        transform: translate(0, -0px);
+      @keyframes floating {
+        from {
+          transform: translate(0, 0px);
+        }
+        65% {
+          transform: translate(0, 25px);
+        }
+        to {
+          transform: translate(0, -0px);
+        }
       }
     }
   }

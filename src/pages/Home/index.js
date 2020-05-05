@@ -3,8 +3,8 @@ import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 
 import { Container, HeaderWrapper, CardContainer } from './styles';
 
-import logo from '../../assets/01.svg';
-import banner from '../../assets/accounting_1.png';
+import logo from '../../assets/03.svg';
+import banner from '../../assets/accounting_1.svg';
 
 export default function Home() {
   return (
@@ -15,10 +15,10 @@ export default function Home() {
             <img src={logo} alt="logo" />
             <ul>
               <li>
-                <FaInstagram size={22} color="#fff" />
+                <FaInstagram size={22} color="#FFF" />
               </li>
               <li>
-                <FaFacebookF size={22} color="#fff" />
+                <FaFacebookF size={22} color="#FFF" />
               </li>
             </ul>
           </div>
@@ -34,10 +34,10 @@ export default function Home() {
       </HeaderWrapper>
       <CardContainer>
         <div className="card-wrapper">
-          <h3>
-            Trazendo qualidade para empresas de Santa Catarina e todo o Brasil
-            desde 1995.
-          </h3>
+          <span>
+            Trazendo qualidade e compromisso para empresas de Santa Catarina e
+            todo o Brasil desde 1995.
+          </span>
           <div className="animated-banner">
             <img src={banner} alt="banner" />
           </div>
