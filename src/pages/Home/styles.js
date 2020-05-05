@@ -27,7 +27,6 @@ export const HeaderWrapper = styled.div`
         align-items: center;
 
         margin-left: 12px;
-        margin-top: 20px;
       }
 
       li {
@@ -74,7 +73,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  margin-top: 100px;
+  margin-top: 200px;
 
   div {
     display: flex;
@@ -117,4 +116,8 @@ export const CardContainer = styled.div`
       }
     }
   }
+`;
+
+export const Services = styled.div`
+  margin-top: 250px;
 `;

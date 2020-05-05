@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default createGlobalStyle`
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 * {
   margin: 0;
@@ -12,10 +15,11 @@ export default createGlobalStyle`
   outline: 0;
 }
 html, body, #root {
-  height: 100%;
-  background-image: linear-gradient(to bottom, #7289da 10%, #021586);
+  max-height: 110%;
+  background-image:linear-gradient(to bottom, #7289da 10%, #021586);
 }
 body{
+
   -webkit-font-smoothing: antialiased !important;
 }
 body, input, button {
